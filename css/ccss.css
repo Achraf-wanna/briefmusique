@@ -44,22 +44,22 @@ a {
   text-decoration: none;
 }
 
-.count {
+/* .count {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-}
+} */
 
-.imagescount {
+/* .imagescount {
   background-size: cover;
   height: 300px;
   width: 200px;
   height: auto;
   border-radius: 20px;
   margin-top: 52px;
-}
+} */
 
 .text-ourpodcasts {
   color: #43086d;
