@@ -13,6 +13,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  margin-top: -100px;
 }
 @import "compass/css3";
 
@@ -39,8 +47,8 @@ header a{
   background:rgba(0,0,0,0.1); 
   display:inline-block; 
   padding:0px 30px; 
-  height:60px;
-  line-height:60px; 
+  /* height:60px;
+  line-height:60px;  */
   text-align:center;
   font-family: 'Roboto Slab', serif; 
   text-decoration:none;
