@@ -129,22 +129,35 @@ a {
 .gif {
   margin-top: 100px;
 }
+/* CSS Document */
+.gallery-block{padding-bottom: 60px; padding-top: 60px;}
+.gallery-block .heading{margin-bottom: 50px; text-align: center;}
 
-/* .count {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}  
-.imagescount {
-  background-size: cover;
-  height: 300px;
-  width: 200px;
-  height: auto;
-  border-radius: 20px;
-  margin-top: 52px;
-} */
+.gallery-block .heading h2{font-weight: bold;font-size: 1.4rem; text-transform: uppercase;}
+
+.gallery-block.cards-gallery h6{font-size: 17px; font-weight: bold;}
+
+.gallery-block.cards-gallery .card{transition: 0.4s easy;}
+.gallery-block.cards-gallery .card img{box-shadow: 0px 2px 10px rgba(0,0,0,0.15);}
+.gallery-block.cards-gallery .card-body{text-align: center;}
+.gallery-block.cards-gallery .card-body p{font-size: 15px;}
+.gallery-block.cards-gallery a{color:#212529; }
+.gallery-block.cards-gallery a:hover{text-decoration: none;}
+.gallery-block.cards-gallery  .card{
+	margin-bottom: 30px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
+}
+
+
+
 
 .text-ourartist {
   color: #212529;
