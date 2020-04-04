@@ -86,6 +86,8 @@ header a{
   height:10em; 
   margin-top:-5em; 
   width:100%;
+  opacity: 230.77;
+  text-shadow: 2px 2px 5px blue;
 }
 
 .hero h1, .hero p{ 
