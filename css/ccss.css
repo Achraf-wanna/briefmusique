@@ -6,7 +6,6 @@ body {
 }
 
 header {
-  /* background-image: url(../img/footer.png); */
   background-size: cover;
   height: 650px;
   width: 100%;
@@ -67,8 +66,9 @@ header a{
 }
 
 .hero .inner{
-  background: rgba(0, 0, 0, 0.7) url(https://w.wallhaven.cc/full/yj/wallhaven-yjj72g.jpg) repeat;
+  background: rgba(0, 0, 0, 0.7) url(https://w.wallhaven.cc/full/yj/wallhaven-yjj72g.jpg) ;
   opacity: 0.9;
+  /* background-size: contain; */
 }
 
 
@@ -101,19 +101,6 @@ p{
   font-size:14px;
   padding:0px 20px;
 }
-
-
-/* .navbar-brand {
-  position: relative; 
-   /* background: url('https://www.musique-pour-tous.org/wp-content/themes/musique-pour-tous/library/images/mpt_logo_small.png'); */
-  /* width: 200px;
-  left: 15px; */
-/* } */ */
-
-/* .logo {
-  width: 150px;
-  height: auto;
-} */
 
 .menu {
   display: flex;
@@ -199,7 +186,7 @@ a {
 }
 
 .add img {
-  width: 150px;
+  width: 100px;
   height: auto;
   /* border-radius: 50px; */
 }
