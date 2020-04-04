@@ -107,7 +107,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 48px 0;
 }
 
 .add img {
@@ -117,7 +117,7 @@ a {
 }
 
 .line {
-  background-color: #43086d;
+  background-color: #212925;
   height: 3px;
   width: 100px;
 }
@@ -134,7 +134,7 @@ input[type=text] {
 
 input[type=button] {
   width: 200px;
-  background-color: #43086d;
+  background-color: #212925;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -158,10 +158,11 @@ input[type=button]:hover {
 }
 
 .form {
-  box-shadow: 0 0 15px 1px rgba(67, 8, 109, 0.4);
+  box-shadow: 0 0 15px 1px rgba(11, 10, 12, 0.4);
   border: 0 none;
   width: 50%;
   padding: 20px;
+  margin-bottom: 100px;
 }
 
 textarea {
