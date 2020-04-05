@@ -1,0 +1,32 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Rihana",
+      "album": "Good Girl Bad Live",
+      "cat": "Pop",
+      "imgg": "https://i.pinimg.com/originals/ac/5c/dc/ac5cdc0d6e74c559d1be552a232bbac2.png"
+    },
+    {
+      "id": 2,
+      "name": "Eminem",
+      "album": "Kamikaz",
+      "cat": "Rap",
+      "imgg": "https://www.rollingstone.com/wp-content/uploads/2018/06/eminem-track-by-track-revival-new-57b63db3-3bb9-4b7e-b3a4-7f0e48714a0e.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Katy Perry",
+      "album": "Witness",
+      "cat": "Pop",
+      "imgg": "https://wallpapercave.com/wp/nUsV1kD.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Don Bigg",
+      "album": "Talet",
+      "cat": "Rap",
+      "imgg": "http://www.mawazine.ma/wp-content/uploads/2017/04/Ph-Bigg.jpg"
+    }
+  ]
+}
