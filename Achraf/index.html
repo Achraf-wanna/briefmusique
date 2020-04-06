@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music | </title>
+    <link rel="stylesheet" href="css/ccss.css">
+    <script src="https://kit.fontawesome.com/5fdbe7144b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.pinimg.com/originals/2f/35/30/2f35309e0507656bce31619a16ae2569.gif" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header-->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-">
+            <a class="navbar-brand" href="index.html">
+              <img src="https://www.musique-pour-tous.org/wp-content/themes/musique-pour-tous/library/images/mpt_logo_small.png" width="100" height="55" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-list-2">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="podcast1.html"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="podcast2.html">Artist</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="podcast3.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    
+    <section id="hero1" class="hero">
+      <div class="inner">
+        <div class="copy">
+        <h1>Welcome to MusicApp</h1>
+        <p>MusicAPP is a digital music, podcast, and video streaming service that gives you access to millions of songs and other content from artists all over the world.</p>
+        </div>
+      </div>
+    </section>    
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+      <!-- /.container -->
+      
+     
+    </div>
+          <div class="text-center">
+            <div class="gif">
+            <img src="https://i.pinimg.com/originals/2f/35/30/2f35309e0507656bce31619a16ae2569.gif" style="width: 10%; height: auto;" class="rounded-pill" alt="...">
+            <p class="text-ourartist"> OUR ARTISTES </p>
+            <center><div class="line"></div></center>
+          </div>
+          </div>
+         
+    <!-- the -3-podcasts in our site  -->
+    <div class="the-3-PODCASTS" id="the-3-PODCASTS">
+
+        
+    </div>
+        
+    <div class="text-center">
+      <div class="add">
+      <p class="text-ourartist"> OUR ARTISTES </p>
+      <center><div class="line"></div></center>
+    </div>
+    </div>
+        
+        <!-- formuler -->
+
+        <div class="form-container">
+        <div class="form">
+            <form method="post" action="/artists">
+              <label>Artist name :</label>
+              <input type="text" id="pname" name="name" placeholder="Artist name.." >
+          
+              <label>Album :</label>
+              <input type="text" id="prname" name="album" placeholder="Album ..."  >
+          
+              <label>Category :</label>
+              <input type="text" id="cat" name="cat" placeholder="Category.."  >
+
+              <label>Image link :</label>
+              <input type="text" id="imglink" name="imgg" placeholder="Image link.." >
+              
+            
+             <center> <input type="submit" value="ADD" > </center>
+            </form>
+          </div>
+        </div>
+        <script type="text/javascript">
+
+          var myRequest = new XMLHttpRequest();
+          var reslt = document.getElementById('the-3-PODCASTS');
+  
+          myRequest.onreadystatechange = function(){
+              if(this.readyState === 4 && this.status === 200){
+                  var myJsObject = JSON.parse(this.responseText);
+  
+                  for (var j =0 ; j < myJsObject.artists.length; j++){
+  
+                  var div = document.createElement('div');
+                  
+                  var img = document.createElement('img');
+                 
+                  var h3si = document.createElement('h3');
+                  var h3cat = document.createElement('h3');
+                  var h3album = document.createElement('h3');
+                  
+                  var a = document.createElement('a');
+  
+                  div.className = "images";
+                  img.setAttribute("src",myJsObject.artists[j].imgg);
+                  img.setAttribute("height","500");
+                  
+                  
+                  a.setAttribute("href", "#")
+                  
+  
+  
+  
+                  h3si.innerHTML = myJsObject.artists[j].name;
+                  h3cat.innerHTML = myJsObject.artists[j].cat;
+                  h3album.innerHTML = myJsObject.artists[j].album;
+                  
+                  
+  
+                  a.appendChild(img);
+                  div.appendChild(a);
+                  div.appendChild(h3si);
+                  div.appendChild(h3cat);
+                  div.appendChild(h3album);
+                    
+                  reslt.appendChild(div);
+  
+  
+              }
+  
+              }
+          };
+  
+          myRequest.open("GET", "data.json", true);
+          myRequest.send();
+  
+          </script>
+        
+         <!-- formuler -->
+
+
+
+ <!-- footer -->
+
+ <!-- <footer>
+</footer> -->
+<!--use boostrap-->
+
+<footer class="bg-dark text-light text-center text-md-left">
+	<div class="container">
+		<div class="row pt-4">
+			<div class="col-sm-6 col-md-3 pb-4">
+				<h4 class="mb-4">
+					Services
+				</h4>
+				<ul class="list-unstyled">
+					<li>
+						<a href="#" class="text-light">Digital Music </a>
+					</li>
+					<li>
+						<a href="#" class="text-light">Podcast</a>
+					</li>
+					<li>
+						<a href="#" class="text-light">Music Streaming</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-md-3 pb-4">
+				<h4 class="mb-4">
+					About
+				</h4>
+				<ul class="list-unstyled">
+					<li>
+						<a href="#" class="text-light">App</a>
+					</li>
+					<li>
+						<a href="#" class="text-light">Basic Function</a>
+					</li>
+					<li>
+						<a href="#" class="text-light">Free Music</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6 pb-4">
+				<h4 class="mb-4">
+					Powered by : 
+				</h4>
+				<h2>
+          YouCode Students 
+        </h2>
+			</div>
+		</div>
+		<div class="col d-flex justify-content-center mb-4">
+			<a href="#" class="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook-m.png" alt="Facebook" /></a><a href="#" class="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter-m.png" alt="Twitter" /></a><a href="#" class="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-instagram-m.png" alt="Instagram" /></a><a href="#" class="d-block px-3"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-linkedin-m.png" alt="Linkedin" /></a>
+		</div>
+		<p class="text-center text-secondary border-top border-secondary py-4">
+			© 2020 Copyright YouCode Studios, All rights reserved.
+		</p>
+	</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>  
+</body>
+</html>
