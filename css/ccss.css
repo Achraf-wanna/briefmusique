@@ -44,7 +44,7 @@ header{
 
 header a{
   color:white;
-  background:rgba(0,0,0,0.1); 
+  /* background:rgba(0,0,0,0.1);  */
   display:inline-block; 
   padding:0px 30px; 
   height:60px;
@@ -165,7 +165,7 @@ a {
 }
 
 .images {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 #9b59b6, 0 6px 20px 0 #9b59b6;
 }
 
 .images1 {
@@ -271,7 +271,9 @@ textarea {
   margin: 8px 0;
 }
 
+
 /* footer {
+
 
   background-size: cover;
   width: 100%;
@@ -369,4 +371,23 @@ footer div i {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.colorfooter{
+  background: #20002c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-bottom: 0px;
+
+}
+.colorheader{
+  background: #20002c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #20002c, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+/* .footermargin{
+  margin-bottom: 0px !important;
+} */
+.cop{
+  color: #ccc;
 }
