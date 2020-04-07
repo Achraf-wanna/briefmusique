@@ -71,5 +71,6 @@ Splitting({
 	columns: 3,
 	image: true
   });
+  
 
 
